@@ -1,0 +1,54 @@
+sync:
+  defaults:
+    ignore:
+      vcs: true
+      paths:
+        - "node_modules"
+        - "node_modules/**"
+        - ".pnpm-store"
+        - ".pnpm-store/**"
+        - ".yarn"
+        - ".yarn/**"
+        - vendor
+        - vendor/**
+        - dist
+        - dist/**
+        - build
+        - build/**
+        - ".next"
+        - ".next/**"
+        - out
+        - out/**
+        - coverage
+        - coverage/**
+        - "*.tsbuildinfo"
+        - ".mutagen"
+        - ".mutagen/**"
+        - ".mcp_data"
+        - ".mcp_data/**"
+        - ".sisyphus"
+        - ".sisyphus/**"
+        - ".turbo"
+        - ".turbo/**"
+        - ".npm-cache"
+        - ".npm-cache/**"
+        - __pycache__
+        - __pycache__/**
+        - .venv
+        - .venv/**
+        - venv
+        - venv/**
+        - "*.pyc"
+        - ".DS_Store"
+        - Thumbs.db
+        - .idea
+        - .idea/**
+        - .vscode
+        - .vscode/**
+        - "*.swp"
+        - "*.swo"
+        - logs
+        - logs/**
+        - "*.log"
+        - ".tmp-*"
+
