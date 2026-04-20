@@ -1,0 +1,30 @@
+# ch5me
+
+CH5 LLC company homepage for ch5.me.
+
+## Stack
+
+- Astro static site
+- React island for the homepage WebGL hero
+- Three.js for the animated background
+
+## Commands
+
+- `pnpm dev` — local development
+- `pnpm build` — production build
+- `pnpm preview` — preview built site
+- `pnpm astro check` — Astro type and content checks
+
+## Deployment
+
+- Cloudflare Pages project: `ch5me`
+- Deploy command: `wrangler pages deploy dist --project-name ch5me`
+- If the `ch5.me` custom domain is stuck pending, check for old proxied `A` records on `@` or `www` from the previous host and replace them with proxied `CNAME` records to `ch5me.pages.dev`
+- Local preview can collide with other Astro projects on `4321`; use `pnpm preview --host 127.0.0.1 --port 4327` when needed
+
+## Conventions
+
+- Keep the site lightweight and static-first
+- Use Astro for layout and content sections
+- Use React only for interactive or browser-only visuals
+- Keep company copy factual and minimal

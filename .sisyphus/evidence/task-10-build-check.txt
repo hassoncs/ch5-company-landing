@@ -1,0 +1,6 @@
+=== T10: Build check ===
+
+15:57:54 [build] ✓ Completed in 1.59s.
+15:57:54 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+15:57:54 [build] 1 page(s) built in 1.65s
+15:57:54 [build] Complete!

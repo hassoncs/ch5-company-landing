@@ -1,54 +1,78 @@
-sync:
-  defaults:
-    ignore:
-      vcs: true
-      paths:
-        - "node_modules"
-        - "node_modules/**"
-        - ".pnpm-store"
-        - ".pnpm-store/**"
-        - ".yarn"
-        - ".yarn/**"
-        - vendor
-        - vendor/**
-        - dist
-        - dist/**
-        - build
-        - build/**
-        - ".next"
-        - ".next/**"
-        - out
-        - out/**
-        - coverage
-        - coverage/**
-        - "*.tsbuildinfo"
-        - ".mutagen"
-        - ".mutagen/**"
-        - ".mcp_data"
-        - ".mcp_data/**"
-        - ".sisyphus"
-        - ".sisyphus/**"
-        - ".turbo"
-        - ".turbo/**"
-        - ".npm-cache"
-        - ".npm-cache/**"
-        - __pycache__
-        - __pycache__/**
-        - .venv
-        - .venv/**
-        - venv
-        - venv/**
-        - "*.pyc"
-        - ".DS_Store"
-        - Thumbs.db
-        - .idea
-        - .idea/**
-        - .vscode
-        - .vscode/**
-        - "*.swp"
-        - "*.swo"
-        - logs
-        - logs/**
-        - "*.log"
-        - ".tmp-*"
-
+# Mutagen ignore config — project-specific
+# Sync targets managed in ~/.config/ch5/sync-targets.yml
+ignore:
+  vcs: true
+  paths:
+    # Package manager caches
+    - "node_modules"
+    - "node_modules/**"
+    - ".pnpm-store"
+    - ".pnpm-store/**"
+    - ".yarn"
+    - ".yarn/**"
+    - vendor
+    - vendor/**
+    # Build artifacts
+    - dist
+    - dist/**
+    - build
+    - build/**
+    - ".next"
+    - ".next/**"
+    - out
+    - out/**
+    - coverage
+    - coverage/**
+    - "*.tsbuildinfo"
+    # Tool caches
+    - ".mutagen"
+    - ".mutagen/**"
+    - ".mcp_data"
+    - ".mcp_data/**"
+    - ".sisyphus"
+    - ".sisyphus/**"
+    - ".turbo"
+    - ".turbo/**"
+    - ".npm-cache"
+    - ".npm-cache/**"
+    - __pycache__
+    - __pycache__/**
+    - .venv
+    - .venv/**
+    - .venv-*
+    - .venv-*/**
+    - venv
+    - venv/**
+    - "*.pyc"
+    # OS/editor junk
+    - ".DS_Store"
+    - Thumbs.db
+    - .idea
+    - .idea/**
+    - .vscode
+    - .vscode/**
+    - "*.swp"
+    - "*.swo"
+    # Logs and temp files
+    - logs
+    - logs/**
+    - "*.log"
+    - ".tmp-*"
+    # OpenCode/deploy state (per-machine)
+    - ".opencode"
+    - ".opencode/**"
+    - ".deploy-snapshots"
+    - ".deploy-snapshots/**"
+    - ".beads"
+    - ".beads/**"
+    - archive
+    - archive/**
+    # iOS
+    - Pods
+    - Pods/**
+    - "*/Pods"
+    - "*/Pods/**"
+    - "*.xcworkspace"
+    - "*.xcworkspace/**"
+    - DerivedData
+    - DerivedData/**
