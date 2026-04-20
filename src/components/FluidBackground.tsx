@@ -1,6 +1,3 @@
-// FluidBackground — full-page animated canvas gradient layer
-// Respects prefers-reduced-motion; falls back to static gradient when motion is off
-
 import { useEffect, useRef } from 'react';
 
 interface Orb {
@@ -25,6 +22,7 @@ function createOrbs(count: number, w: number, h: number): Orb[] {
 
 export default function FluidBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pointerRef = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -48,6 +46,11 @@ export default function FluidBackground() {
       return () => window.removeEventListener('resize', resize);
     }
 
+    const onPointerMove = (e: PointerEvent) => {
+      pointerRef.current = { x: e.clientX, y: e.clientY };
+    };
+    window.addEventListener('pointermove', onPointerMove, { passive: true });
+
     const orbs = createOrbs(5, canvas.width, canvas.height);
     let rafId: number;
 
@@ -56,7 +59,21 @@ export default function FluidBackground() {
       ctx.fillStyle = 'rgba(5, 5, 16, 0.18)';
       ctx.fillRect(0, 0, width, height);
 
+      const ptr = pointerRef.current;
+
       for (const orb of orbs) {
+        if (ptr) {
+          const dx = ptr.x - orb.x;
+          const dy = ptr.y - orb.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < orb.r * 1.5) {
+            orb.vx += (dx / dist) * 0.015;
+            orb.vy += (dy / dist) * 0.015;
+          }
+        }
+
+        orb.vx *= 0.995;
+        orb.vy *= 0.995;
         orb.x += orb.vx;
         orb.y += orb.vy;
         if (orb.x < -orb.r) orb.x = width + orb.r;
@@ -83,6 +100,7 @@ export default function FluidBackground() {
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener('resize', resize);
+      window.removeEventListener('pointermove', onPointerMove);
     };
   }, []);
 
@@ -91,7 +109,6 @@ export default function FluidBackground() {
       ref={canvasRef}
       className="fixed inset-0 w-full h-full pointer-events-none"
       style={{ zIndex: 0 }}
-
     />
   );
 }

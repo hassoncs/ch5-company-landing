@@ -1,10 +1,10 @@
-import BlurText from './BlurText';
+import PretextHeadline from './PretextHeadline';
 import KineticText from './KineticText';
 import { heroContent } from '../data/projects';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-visible min-h-screen md:min-h-[900px]">
+    <section id="about" className="relative overflow-visible min-h-screen md:min-h-[900px]">
       <video
         autoPlay
         loop
@@ -29,10 +29,9 @@ export default function Hero() {
           <span className="text-white/80 text-sm font-body">{heroContent.badge}</span>
         </div>
 
-        <BlurText
+        <PretextHeadline
           text={heroContent.headline}
           className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] max-w-2xl tracking-[-4px] mb-6"
-          delay={0.1}
         />
 
         <KineticText

@@ -1,8 +1,3 @@
-// KineticText — animated character-reveal for hero subhead
-// Splits text into spans with staggered CSS animation; degrades to plain text with no JS
-
-'use client';
-
 import { useEffect, useRef, useState } from 'react';
 
 interface KineticTextProps {
@@ -26,13 +21,13 @@ export default function KineticText({ text, className = '', delay = 0 }: Kinetic
     return <p className={className}>{text}</p>;
   }
 
-  const words = text.split(' ');
+  const words = text.split(' ').map((w, i) => ({ word: w, id: `${w}-${i}` }));
 
   return (
     <p ref={ref} className={className}>
-      {words.map((word, wi) => (
+      {words.map(({ word, id }, wi) => (
         <span
-          key={`${word}-${wi}`}
+          key={id}
           className="inline-block overflow-hidden mr-[0.25em]"
         >
           <span
@@ -46,6 +41,7 @@ export default function KineticText({ text, className = '', delay = 0 }: Kinetic
           </span>
         </span>
       ))}
+
     </p>
   );
 }
