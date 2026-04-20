@@ -1,0 +1,38 @@
+=== F3 Browser QA ===
+
+Check 1: Required project names
+Firefly
+FitBot
+Hush
+MacroBot
+Slopcade
+Waypoint
+
+Check 2: Banned copy count (expect 0)
+0
+0
+
+Check 3: Hero contains Firefly
+Firefly
+
+Check 4: Page title
+<title>CH5 LLC — Personal maker company</title>
+
+Check 5: About anchor
+id="about"
+
+Check 6: Nav hrefs (no dead agency links)
+href="#about"
+href="#projects"
+
+Check 7: pnpm check
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+Check 8: pnpm build
+16:51:23 [build] ✓ Completed in 1.30s.
+16:51:23 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+16:51:23 [build] 1 page(s) built in 1.34s
+16:51:23 [build] Complete!
