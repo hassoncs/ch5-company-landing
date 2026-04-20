@@ -184,9 +184,9 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/platform-stack.md:148-156` - Hush description and secret-management positioning
 
   **Acceptance Criteria**:
-  - [ ] A single source of homepage project/copy data exists and is imported by the homepage
-  - [ ] The data source includes all required featured names exactly once
-  - [ ] No banned words appear in the new data source: `services`, `pricing`, `book a call`, `get started`
+  - [x] A single source of homepage project/copy data exists and is imported by the homepage
+  - [x] The data source includes all required featured names exactly once
+  - [x] No banned words appear in the new data source: `services`, `pricing`, `book a call`, `get started`
 
   **QA Scenarios**:
   ```text
@@ -244,9 +244,9 @@ Wave FINAL
   - `README.md:13-17` - repo purpose: lightweight public presence, not sales funnel
 
   **Acceptance Criteria**:
-  - [ ] Rendered nav contains none of: `Services`, `Work`, `Process`, `Pricing`
-  - [ ] Rendered page contains none of: `Get Started`, `Book a Call`, `View Pricing`
-  - [ ] All remaining nav anchors scroll to real sections or use valid routes
+  - [x] Rendered nav contains none of: `Services`, `Work`, `Process`, `Pricing`
+  - [x] Rendered page contains none of: `Get Started`, `Book a Call`, `View Pricing`
+  - [x] All remaining nav anchors scroll to real sections or use valid routes
 
   **QA Scenarios**:
   ```text
@@ -306,10 +306,10 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/README.md:38-49` - durable, anti-hype voice cues
 
   **Acceptance Criteria**:
-  - [ ] Hero includes `Firefly`
-  - [ ] Hero does not include `The Website Your Brand Deserves`
-  - [ ] Hero does not include fake brand logos list (`Stripe`, `Vercel`, `Linear`, `Notion`, `Figma`)
-  - [ ] Hero copy reads as product/ecosystem introduction, not client-service offer
+  - [x] Hero includes `Firefly`
+  - [x] Hero does not include `The Website Your Brand Deserves`
+  - [x] Hero does not include fake brand logos list (`Stripe`, `Vercel`, `Linear`, `Notion`, `Figma`)
+  - [x] Hero copy reads as product/ecosystem introduction, not client-service offer
 
   **QA Scenarios**:
   ```text
@@ -367,9 +367,9 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/agent-ecosystem.md:95-96` - ownership split sentence for structural truth
 
   **Acceptance Criteria**:
-  - [ ] Section no longer contains `How It Works`
-  - [ ] Section no longer contains `You dream it. We ship it.`
-  - [ ] Section introduces CH5 worldview without services language
+  - [x] Section no longer contains `How It Works`
+  - [x] Section no longer contains `You dream it. We ship it.`
+  - [x] Section introduces CH5 worldview without services language
 
   **QA Scenarios**:
   ```text
@@ -427,9 +427,9 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/app-portfolio.md:61-89` - backlog/experiment products useful for constellation framing
 
   **Acceptance Criteria**:
-  - [ ] Page no longer contains `200+`, `98%`, `3.2x`, `5 days`
-  - [ ] Page no longer contains `Sarah Chen`, `Marcus Webb`, `Elena Voss`
-  - [ ] Replacement section exists and can visibly host multiple CH5 projects
+  - [x] Page no longer contains `200+`, `98%`, `3.2x`, `5 days`
+  - [x] Page no longer contains `Sarah Chen`, `Marcus Webb`, `Elena Voss`
+  - [x] Replacement section exists and can visibly host multiple CH5 projects
 
   **QA Scenarios**:
   ```text
@@ -488,9 +488,9 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/platform-stack.md:107-156` - Ghost Browser, cmux, ch5, Hush context if needed for surrounding ecosystem language
 
   **Acceptance Criteria**:
-  - [ ] Rendered homepage contains `Firefly`, `FitBot`, `Waypoint`, `MacroBot`, `Slopcade`, `Hush`
-  - [ ] Rendered homepage does not contain `Capabilities`, `Why Us`, `Built to Convert`, `Secure by Default`
-  - [ ] Project presentation is visibly grouped or differentiated, not a flat paragraph dump
+  - [x] Rendered homepage contains `Firefly`, `FitBot`, `Waypoint`, `MacroBot`, `Slopcade`, `Hush`
+  - [x] Rendered homepage does not contain `Capabilities`, `Why Us`, `Built to Convert`, `Secure by Default`
+  - [x] Project presentation is visibly grouped or differentiated, not a flat paragraph dump
 
   **QA Scenarios**:
   ```text
@@ -548,9 +548,9 @@ Wave FINAL
   - `src/pages/index.astro:27-38` - overall page composition for choosing insertion point
 
   **Acceptance Criteria**:
-  - [ ] Pretext dependency is installed and used in at least one rendered homepage interaction
-  - [ ] The page remains readable with JS disabled or with interaction unavailable
-  - [ ] `pnpm check` and `pnpm build` still pass after integration
+  - [x] Pretext dependency is installed and used in at least one rendered homepage interaction
+  - [x] The page remains readable with JS disabled or with interaction unavailable
+  - [x] `pnpm check` and `pnpm build` still pass after integration
 
   **QA Scenarios**:
   ```text
@@ -611,10 +611,10 @@ Wave FINAL
   - `README.md:3-17` - lightweight public presence; visual layer must not bloat beyond reason
 
   **Acceptance Criteria**:
-  - [ ] Fluid layer is visible on normal desktop rendering
-  - [ ] Content remains readable above it
-  - [ ] Reduced-motion mode disables or simplifies nonessential motion
-  - [ ] Graceful fallback appears when the effect cannot render
+  - [x] Fluid layer is visible on normal desktop rendering
+  - [x] Content remains readable above it
+  - [x] Reduced-motion mode disables or simplifies nonessential motion
+  - [x] Graceful fallback appears when the effect cannot render
 
   **QA Scenarios**:
   ```text
@@ -673,9 +673,9 @@ Wave FINAL
   - `/Users/hassoncs/Workspaces/personal/ch5-company/app-portfolio.md:42-69` - project list to keep readable when layout collapses
 
   **Acceptance Criteria**:
-  - [ ] Mobile viewport still shows Firefly and at least the full featured project set accessibly
-  - [ ] Reduced-motion behavior is implemented and testable
-  - [ ] No text sits unreadably over the fluid layer in key sections
+  - [x] Mobile viewport still shows Firefly and at least the full featured project set accessibly
+  - [x] Reduced-motion behavior is implemented and testable
+  - [x] No text sits unreadably over the fluid layer in key sections
 
   **QA Scenarios**:
   ```text
@@ -734,10 +734,10 @@ Wave FINAL
   - `src/components/CtaFooter.tsx:20-41` - stale CTA language to ensure removed
 
   **Acceptance Criteria**:
-  - [ ] Title/description no longer describe CH5 as an AI-powered software studio selling apps/services
-  - [ ] Source sweep finds none of: `Get Started`, `Book a Call`, `View Pricing`, `Services`, `Process`, `Client satisfaction`
-  - [ ] `pnpm check` passes
-  - [ ] `pnpm build` passes
+  - [x] Title/description no longer describe CH5 as an AI-powered software studio selling apps/services
+  - [x] Source sweep finds none of: `Get Started`, `Book a Call`, `View Pricing`, `Services`, `Process`, `Client satisfaction`
+  - [x] `pnpm check` passes
+  - [x] `pnpm build` passes
 
   **QA Scenarios**:
   ```text
