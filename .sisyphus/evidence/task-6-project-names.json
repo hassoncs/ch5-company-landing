@@ -1,0 +1,8 @@
+src/components/CtaFooter.tsx:21:          Maker of Firefly, FitBot, cmux, and other things that run.
+src/data/projects.ts:13:    name: "Firefly",
+src/data/projects.ts:21:    name: "FitBot",
+src/data/projects.ts:28:    name: "Waypoint",
+src/data/projects.ts:35:    name: "MacroBot",
+src/data/projects.ts:42:    name: "Slopcade",
+src/data/projects.ts:49:    name: "Hush",
+src/pages/index.astro:12:const description = 'CH5 is a personal maker company building products, tools, and experiments. Firefly is the flagship — a privacy-first AI assistant.';

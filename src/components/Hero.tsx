@@ -4,7 +4,7 @@ import { heroContent } from '../data/projects';
 
 export default function Hero() {
   return (
-    <section id="about" className="relative overflow-visible min-h-screen md:min-h-[900px]">
+    <section className="relative overflow-visible min-h-screen md:min-h-[900px]">
       <video
         autoPlay
         loop

@@ -2,7 +2,7 @@ import BlurText from './BlurText';
 
 export default function StartSection() {
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="about" className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-[#0a0a0a]" />
       <div className="absolute top-0 w-full h-[200px] bg-gradient-to-b from-black to-transparent" />
       <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-black to-transparent" />

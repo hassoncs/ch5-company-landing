@@ -1,6 +1,37 @@
-=== T10: Build check ===
+=== pnpm check ===
 
-15:57:54 [build] ✓ Completed in 1.59s.
-15:57:54 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
-15:57:54 [build] 1 page(s) built in 1.65s
-15:57:54 [build] Complete!
+> ch5me@0.0.1 check /Users/hassoncs/Workspaces/Personal/ch5-company-landing
+> astro check
+
+16:14:08 [types] Generated 48ms
+16:14:08 [check] Getting diagnostics for Astro files in /Users/hassoncs/Workspaces/Personal/ch5-company-landing...
+Result (16 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+=== pnpm build ===
+
+> ch5me@0.0.1 build /Users/hassoncs/Workspaces/Personal/ch5-company-landing
+> astro build
+
+16:14:12 [types] Generated 29ms
+16:14:12 [build] output: "static"
+16:14:12 [build] mode: "static"
+16:14:12 [build] directory: /Users/hassoncs/Workspaces/Personal/ch5-company-landing/dist/
+16:14:12 [build] Collecting build info...
+16:14:12 [build] ✓ Completed in 43ms.
+16:14:12 [build] Building static entrypoints...
+16:14:12 [vite] ✓ built in 851ms
+16:14:13 [vite] ✓ built in 478ms
+16:14:13 [build] Rearranging server assets...
+
+ generating static routes 
+16:14:13   ├─ /index.html (+164ms) 
+16:14:13 ✓ Completed in 191ms.
+
+16:14:13 [build] ✓ Completed in 1.58s.
+16:14:13 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+16:14:13 [build] 1 page(s) built in 1.63s
+16:14:13 [build] Complete!
+PASS

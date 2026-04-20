@@ -54,8 +54,8 @@ export const projects: Project[] = [
 ];
 
 export const heroContent = {
-  headline: "Real things, built slow.",
+  headline: "Firefly",
   subhead:
-    "CH5 is a personal maker company. We ship apps that solve actual problems, then keep them running. No pitch decks, no growth theater.",
+    "A privacy-first AI assistant that reads your devices locally, masks what's sensitive, and shows up where you already work. The cloud only sees what it needs to.",
   badge: "Personal maker company",
 };

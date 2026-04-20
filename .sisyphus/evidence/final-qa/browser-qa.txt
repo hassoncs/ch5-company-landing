@@ -1,0 +1,30 @@
+=== FINAL QA REPORT ===
+
+--- Required project names in built HTML ---
+   4 Firefly
+   3 FitBot
+   2 Hush
+   2 MacroBot
+   2 Slopcade
+   2 Waypoint
+
+--- Banned copy matches (must be 0) ---
+0 matches
+
+--- Section anchors ---
+   1 id="about"
+   1 id="ecosystem"
+   1 id="projects"
+
+--- Hero copy ---
+   2 Personal maker company
+
+--- Section headings ---
+   1 Everything running
+   1 The Constellation
+   1 Things being built
+
+--- Fluid/motion markers ---
+   4 pointer-events-none
+
+VERDICT: PASS

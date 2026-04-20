@@ -25,21 +25,12 @@ export default function CtaFooter() {
       <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-7xl border-t border-white/10 px-8 py-8">
         <div className="flex items-center justify-between">
           <span className="font-body text-xs text-white/40">© 2026 CH5 LLC. All rights reserved.</span>
-          <div className="flex items-center gap-6">
-            {[
-              { label: 'Privacy', href: '/privacy' },
-              { label: 'Terms', href: '/terms' },
-              { label: 'Contact', href: '/contact' },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="font-body text-xs text-white/40 transition-colors hover:text-white/70"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+          <a
+            href="mailto:hello@ch5.me"
+            className="font-body text-xs text-white/40 transition-colors hover:text-white/70"
+          >
+            hello@ch5.me
+          </a>
         </div>
       </div>
     </section>
