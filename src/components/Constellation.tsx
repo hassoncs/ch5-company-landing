@@ -14,7 +14,7 @@ export default function Constellation() {
   const supporting = projects.filter((p) => p.role !== 'hero');
 
   return (
-    <section id="projects" className="relative bg-black px-8 py-24 overflow-hidden">
+    <section id="projects" className="relative px-8 py-24 overflow-hidden">
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
@@ -22,6 +22,7 @@ export default function Constellation() {
             'radial-gradient(ellipse at 50% 40%, rgba(80,100,200,0.18) 0%, transparent 65%)',
         }}
       />
+      <div className="absolute inset-0 bg-black/26 backdrop-blur-[2px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="mb-16">

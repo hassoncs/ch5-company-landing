@@ -1,7 +1,7 @@
 export default function CtaFooter() {
   return (
     <section className="relative flex min-h-[600px] items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-[#0a0a0a]" />
+      <div className="absolute inset-0 bg-black/32 backdrop-blur-[2px]" />
       <div
         className="absolute inset-0 opacity-20"
         style={{
@@ -9,8 +9,8 @@ export default function CtaFooter() {
             'radial-gradient(circle at 50% 50%, rgba(100,120,180,0.2) 0%, transparent 70%)',
         }}
       />
-      <div className="absolute top-0 h-[200px] w-full bg-gradient-to-b from-black to-transparent" />
-      <div className="absolute bottom-0 h-[200px] w-full bg-gradient-to-t from-black to-transparent" />
+      <div className="absolute top-0 h-[200px] w-full bg-gradient-to-b from-black/80 to-transparent" />
+      <div className="absolute bottom-0 h-[200px] w-full bg-gradient-to-t from-black/80 to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-3xl px-8 text-center">
         <p className="font-heading text-5xl italic leading-[0.85] text-white md:text-6xl lg:text-7xl">

@@ -16,7 +16,7 @@ export default function EcosystemSection() {
   })).filter((g) => g.items.length > 0);
 
   return (
-    <section id="ecosystem" className="relative bg-black px-8 py-24 overflow-hidden">
+    <section id="ecosystem" className="relative px-8 py-24 overflow-hidden">
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
@@ -24,8 +24,9 @@ export default function EcosystemSection() {
             'radial-gradient(ellipse at 20% 60%, rgba(120,80,200,0.2) 0%, transparent 55%), radial-gradient(ellipse at 80% 30%, rgba(40,120,180,0.15) 0%, transparent 50%)',
         }}
       />
-      <div className="absolute top-0 w-full h-[200px] bg-gradient-to-b from-black to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-black to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-black/28 backdrop-blur-[2px] pointer-events-none" />
+      <div className="absolute top-0 w-full h-[200px] bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="mb-16">
