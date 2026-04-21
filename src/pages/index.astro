@@ -6,10 +6,11 @@ import StartSection from '../components/StartSection';
 import EcosystemSection from '../components/EcosystemSection';
 import Constellation from '../components/Constellation';
 import CtaFooter from '../components/CtaFooter';
-import FluidBackground from '../components/FluidBackground';
+import PageBackground from '../components/PageBackground';
 
 const title = 'CH5 LLC — Personal maker company';
 const description = 'CH5 is a personal maker company building products, tools, and experiments. Firefly is the flagship — a privacy-first AI assistant.';
+const backgroundVariant = 'fluid';
 ---
 
 <!doctype html>
@@ -23,12 +24,12 @@ const description = 'CH5 is a personal maker company building products, tools, a
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body class="bg-black">
-    <FluidBackground client:only="react" />
-    <div class="relative z-10">
+  <body class="bg-black text-white">
+    <PageBackground client:only="react" variant={backgroundVariant} />
+    <div class="relative z-10 isolate">
       <Navbar client:load />
       <Hero client:load />
-      <div class="bg-black">
+      <div>
         <StartSection />
         <EcosystemSection />
         <Constellation />
