@@ -1,5 +1,4 @@
-import PretextHeadline from './PretextHeadline';
-import KineticText from './KineticText';
+import DodgeText from './DodgeText';
 import { heroContent } from '../data/projects';
 
 export default function Hero() {
@@ -25,20 +24,14 @@ export default function Hero() {
       />
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 md:px-8 pt-32 md:pt-40">
-        <div className="liquid-glass rounded-full px-4 py-1.5 mb-8">
-          <span className="text-white/80 text-sm font-body">{heroContent.badge}</span>
-        </div>
-
-        <PretextHeadline
+        <DodgeText
           text={heroContent.headline}
-          className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] max-w-2xl tracking-[-4px] mb-6"
+          className="mb-6 tracking-tight"
         />
 
-        <KineticText
-          text={heroContent.subhead}
-          className="text-sm md:text-base text-white/70 font-body font-light leading-tight max-w-xl"
-          delay={0.8}
-        />
+        <p className="text-sm md:text-base text-white/70 font-body font-light leading-tight max-w-xl">
+          {heroContent.subhead}
+        </p>
       </div>
     </section>
   );

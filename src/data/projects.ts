@@ -54,8 +54,8 @@ export const projects: Project[] = [
 ];
 
 export const heroContent = {
-  headline: "Firefly",
+  headline: "CH5",
   subhead:
-    "A privacy-first AI assistant that reads your devices locally, masks what's sensitive, and shows up where you already work. The cloud only sees what it needs to.",
+    "A personal maker company building products, tools, and experiments. Firefly is the flagship — privacy-first AI that reads your devices locally and masks what's sensitive before the cloud thinks.",
   badge: "Personal maker company",
 };
