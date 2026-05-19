@@ -1,0 +1,23 @@
+id: ch5-landing-page
+version: 1
+project:
+  id: ch5-landing-page
+  name: CH5 LLC Company Landing Page
+  kind: project
+  lifecycle: active
+  summary: 'CH5 project: CH5 LLC Company Landing Page, project'
+  tags:
+  - apps
+  branding:
+    visual_summary: 'CH5 project: CH5 LLC Company Landing Page, project'
+    icon_prompt: 'Create a clean square app icon for CH5 LLC Company Landing Page.
+      Use the CH5 design system, one dominant accent color anchored on #F59E0B, bold
+      geometry, no text, app-store safe.'
+    cover_prompt: 'Create a wide cover image for CH5 LLC Company Landing Page. Use
+      the CH5 design system, one dominant accent color anchored on #F59E0B, brand-forward
+      composition, text-free, safe to crop.'
+    colors:
+      primary: '#F59E0B'
+    assets:
+      icon_source: .ch5/assets/master/icon.png
+      icon_variant_profile: ch5-master-icon-v1

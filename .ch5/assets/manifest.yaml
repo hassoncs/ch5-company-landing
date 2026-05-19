@@ -1,0 +1,32 @@
+version: 1
+project_id: ch5-landing-page
+generated_at: '2026-05-19T02:15:36Z'
+source_hash: 57ad418b659fc4efafe7d2e00427a6962046458ac10666fc5ea2a625d991edc5
+plane:
+  project_id: d3023bf0-519a-4f4b-9991-0de3d9a5b78e
+  identifier: CH5LANDI8D0
+  name: Ch5 Landing Page
+  confidence: high
+  evidence:
+  - unique normalized name match
+assets:
+  icon:
+    file: master/icon.png
+    prompt: 'Create a clean square app icon for CH5 LLC Company Landing Page. Use
+      the CH5 design system, one dominant accent color anchored on #F59E0B, bold geometry,
+      no text, app-store safe.'
+    prompt_hash: f0ed231bbe1d4c13f625893afdaf93f19eceff81e664ec339eefbe17f26e6ed5
+    provider: minimax
+    model: image-01
+    aspect_ratio: '1:1'
+    key_source: coding-plan
+  cover:
+    file: master/cover.png
+    prompt: 'Create a wide cover image for CH5 LLC Company Landing Page. Use the CH5
+      design system, one dominant accent color anchored on #F59E0B, brand-forward
+      composition, text-free, safe to crop.'
+    prompt_hash: f347b3be1eca150473b52ee8150e562d104bb496fccb7a5254ce4f08b38331fd
+    provider: minimax
+    model: image-01
+    aspect_ratio: '16:9'
+    key_source: coding-plan
