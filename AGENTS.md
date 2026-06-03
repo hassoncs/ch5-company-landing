@@ -8,6 +8,10 @@ CH5 LLC company homepage for ch5.me.
 - React island for the homepage WebGL hero
 - Three.js for the animated background
 
+## Runtime
+
+- Node 24.x
+
 ## Commands
 
 - `pnpm dev` — local development

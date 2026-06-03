@@ -8,6 +8,10 @@ Static Astro landing page for CH5 LLC.
 - React island for the homepage visual
 - Three.js hero animation
 
+## Runtime
+
+- Node 24.x
+
 ## Commands
 
 - `pnpm dev` — start local development
