@@ -1,0 +1,51 @@
+version: 1
+project_root: /Users/hassoncs/src/ch5/ch5-landing-page
+icon_source: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/master/icon.png
+icon_generation_script: null
+variant_profile: ch5-master-icon-v1
+variants:
+- name: master-copy
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/master.png
+  width: 1024
+  height: 1024
+  purpose: canonical-copy
+- name: ios-marketing
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/ios/app-icon-1024.png
+  width: 1024
+  height: 1024
+  purpose: ios-marketing
+- name: android-play
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/android/play-store-1024.png
+  width: 1024
+  height: 1024
+  purpose: android-play-store
+- name: web-app-512
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/icon-512.png
+  width: 512
+  height: 512
+  purpose: pwa
+- name: web-app-192
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/icon-192.png
+  width: 192
+  height: 192
+  purpose: pwa
+- name: apple-touch-180
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/apple-touch-icon.png
+  width: 180
+  height: 180
+  purpose: ios-web-clip
+- name: favicon-32
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/favicon-32.png
+  width: 32
+  height: 32
+  purpose: favicon
+- name: favicon-16
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/favicon-16.png
+  width: 16
+  height: 16
+  purpose: favicon
+- name: favicon-ico
+  path: /Users/hassoncs/src/ch5/ch5-landing-page/.ch5/assets/variants/ch5-master-icon-v1/web/favicon.ico
+  width: 32
+  height: 32
+  purpose: favicon

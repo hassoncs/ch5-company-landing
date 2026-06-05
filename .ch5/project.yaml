@@ -21,3 +21,4 @@ project:
     assets:
       icon_source: .ch5/assets/master/icon.png
       icon_variant_profile: ch5-master-icon-v1
+      icon_generation_script: ../ch5-company/scripts/ch5-master-icon.py

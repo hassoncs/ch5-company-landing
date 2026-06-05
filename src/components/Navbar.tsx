@@ -16,8 +16,15 @@ export default function Navbar() {
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-6 lg:px-16 py-3">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="/" className="flex items-center gap-3">
-          <img src="/ch5-logo.svg" alt="CH5" className="h-12 w-12" />
+        <a href="/" aria-label="CH5 home" className="flex items-center gap-3">
+          <img
+            src="/ch5-logo.png"
+            alt="CH5"
+            className="h-11 w-11 rounded-2xl ring-1 ring-white/10 shadow-[0_14px_35px_rgba(249,115,22,0.3)]"
+          />
+          <span className="hidden sm:inline text-sm font-semibold uppercase tracking-[0.28em] text-white/80">
+            CH5
+          </span>
         </a>
 
         <div className="hidden md:flex items-center liquid-glass rounded-full px-1.5 py-1 gap-1">
