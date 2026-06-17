@@ -34,7 +34,7 @@ Make Forgejo/HQ the authoritative git and CI surface for the landing page while 
 
 ## Current State
 
-Local migration edits complete. Install, check, and build proof passed. First Forgejo run created but stayed pending because `docker` did not match available runner labels; workflow now targets the proven `ubuntu-latest` runner with Forgejo-hosted actions.
+Migration complete. Install, check, and build proof passed. Forgejo run 11 for `36b4008` succeeded. Earlier run 9 stayed pending because `docker` did not match available runner labels; workflow now targets the proven `ubuntu-latest` runner with Forgejo-hosted actions.
 
 ## Plan
 
