@@ -23,6 +23,8 @@ CH5 LLC company homepage for ch5.me.
 
 - Cloudflare Pages project: `ch5me`
 - Deploy command: `wrangler pages deploy dist --project-name ch5me`
+- Deploy secrets: repo-local Hush stores `CLOUDFLARE_API_TOKEN` and
+  `CLOUDFLARE_ACCOUNT_ID`; Forgejo repo Actions secrets mirror the same names.
 - If the `ch5.me` custom domain is stuck pending, check for old proxied `A` records on `@` or `www` from the previous host and replace them with proxied `CNAME` records to `ch5me.pages.dev`
 - Local preview can collide with other Astro projects on `4321`; use `pnpm preview --host 127.0.0.1 --port 4327` when needed
 
