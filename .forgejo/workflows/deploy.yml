@@ -7,14 +7,17 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: docker
+    container:
+      image: node:24-bookworm
+    env:
+      NPM_CONFIG_REGISTRY: https://npm.ch5.me/
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-          cache: pnpm
+      - uses: https://data.forgejo.org/actions/checkout@v4
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.16.1 --activate
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm build

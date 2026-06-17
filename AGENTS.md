@@ -21,6 +21,9 @@ CH5 LLC company homepage for ch5.me.
 
 ## Deployment
 
+- Source-of-truth remote: `hq` (`https://git.ch5.me/ch5/ch5-landing-page.git`)
+- GitHub `origin` is mirror-only when present
+- npm installs resolve through CH5 Verdaccio (`https://npm.ch5.me/`)
 - Cloudflare Pages project: `ch5me`
 - Deploy command: `wrangler pages deploy dist --project-name ch5me`
 - Deploy secrets: repo-local Hush stores `CLOUDFLARE_API_TOKEN` and
